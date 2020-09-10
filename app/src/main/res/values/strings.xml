@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Indian Coffee House</string>
+
+    <!-- @attribute 'android:contentDescription' values for
+         ImageVIew to help Visually Impaired people -->
+
+    <string name="mailId">info@indiancoffeehouse.com</string>
+    <string name="phone">07514011417</string>
+
+    <!-- @attribute 'android:text' values for hardcoded strings in XML layout file -->
+
+    <string name="tag">more than just \'Coffee\' and \'Snacks\'</string>
+    <string name="address">Indian Coffee House\nStation Rd, LNUPE Campus,\nLashkar, Gwalior,\nMadhya Pradesh 474002"</string>
+    <string name="url">indiancoffeehouse.com</string>
+    <string name="schedule">7:30AM to 10:00PM</string>
+    <string name="about">About</string>
+</resources>

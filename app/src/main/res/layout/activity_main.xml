@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp">
+
+    </android.support.v4.view.ViewPager>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pager"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coffee_bg" />
+
+    <TextView
+        android:id="@+id/tag_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:fontFamily="@font/carrois_gothic_sc"
+        android:text="@string/tag"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tag_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="?android:colorAccent" />
+
+    <RelativeLayout
+        android:id="@+id/detail_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/locate_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/locate_img" />
+
+        <TextView
+            android:id="@+id/addr_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/locate_img"
+            android:fontFamily="@font/carrois_gothic_sc"
+            android:onClick="linkToMap"
+            android:padding="5dp"
+            android:text="@string/address"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/web_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="145dp"
+            android:contentDescription="@null"
+            android:src="@drawable/web_img" />
+
+        <TextView
+            android:id="@+id/web_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="138dp"
+            android:layout_toEndOf="@id/web_img"
+            android:autoLink="web"
+            android:fontFamily="@font/carrois_gothic_sc"
+            android:padding="5dp"
+            android:text="@string/url"
+            android:textAlignment="center"
+            android:textColorLink="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/clock_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="190dp"
+            android:contentDescription="@null"
+            android:src="@drawable/clock_img" />
+
+        <TextView
+            android:id="@+id/schedule_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="185dp"
+            android:layout_toEndOf="@id/clock_img"
+            android:fontFamily="@font/carrois_gothic_sc"
+            android:padding="5dp"
+            android:text="@string/schedule"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/phone_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/detail_rl"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_toStartOf="@id/about_btn"
+        android:contentDescription="@string/phone"
+        android:elevation="20dp"
+        android:onClick="linkToPhone"
+        android:src="@drawable/phone_img" />
+
+    <Button
+        android:id="@+id/about_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detail_rl"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_style"
+        android:elevation="20dp"
+        android:fontFamily="@font/carrois_gothic_sc"
+        android:onClick="linkToWiki"
+        android:shadowColor="#757575"
+        android:shadowDx="0.5"
+        android:shadowDy="0.5"
+        android:shadowRadius="10"
+        android:text="@string/about"
+        android:textColor="#FFEB3B"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/email_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/detail_rl"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@id/about_btn"
+        android:contentDescription="@string/mailId"
+        android:elevation="20dp"
+        android:onClick="linkToMail"
+        android:src="@drawable/email_img" />
+
+</RelativeLayout>
+</ScrollView>
