@@ -6,3 +6,5 @@
 <p align="center">
   <img src="https://github.com/RB-93/SingleScreenApp/blob/master/App-demo/Single_Screen[1].jpg" width="300" height="450" title="App screen">
 </p>
+
+
