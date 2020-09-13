@@ -8,7 +8,7 @@ This project was created as a part of the Android Basics Nanodegree and for Goog
 ## Usage:
 
 <p align="center">
-  <img src="https://github.com/RB-93/SingleScreenApp/blob/master/App-demo/Single_Screen[1].jpg?raw=true" width="2500" height="450" title="App screen">
+  <img src="https://github.com/RB-93/SingleScreenApp/blob/master/App-demo/Single_Screen[1].jpg?raw=true" width="250" height="450" title="App screen">
 </p>
 
 ## Credits:
